@@ -333,6 +333,7 @@ address{
 @media(max-width:800px){ /*smaller computer screens and tablets go here*/
 	.container{
 		width:100%;
+
 	}
 
 	.top-header {
@@ -362,7 +363,7 @@ address{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px;
+    padding:20px 2%;
     margin:10px 1% 0 1%;
 
     width:100%;
@@ -427,7 +428,8 @@ address{
 	.content-row-s{
 		display:flex;
 		flex-direction: column;
-		justify-content:flex-start;
+		justify-content:center;
+		align-items: center;
 		margin: 10px 2.5%;
 		width:100%;
 		border-top:2px solid black;
@@ -437,12 +439,12 @@ address{
 	@media(min-width:501px){		/*fix some wonkyness when going between different resolutions this makes it so it only applies to sizes larger than a mobile*/
 
 		.content-row-s div{
-			width: 90%;
+			width: 85%;
 			margin: 2.5% 2.5%;
 		}
 
 		.content-row-s2{
-			width:95%;
+			width:90%;
 			display: flex;
 			justify-content: center;
 			align-items: center;

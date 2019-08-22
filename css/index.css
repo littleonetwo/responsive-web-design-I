@@ -419,6 +419,46 @@ address{
 
   }
 
+	.services-header{
+		width:90%;
+		margin: 0 5% 0 5%;
+	}
+
+	.content-row-s{
+		display:flex;
+		flex-direction: column;
+		justify-content:flex-start;
+		margin: 10px 2.5%;
+		width:100%;
+		border-top:2px solid black;
+		padding-top:30px;
+	}
+
+	@media(min-width:501px){		/*fix some wonkyness when going between different resolutions this makes it so it only applies to sizes larger than a mobile*/
+
+		.content-row-s div{
+			width: 90%;
+			margin: 2.5% 2.5%;
+		}
+
+		.content-row-s2{
+			width:95%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+
+
+	.content-row-s2 div{
+		width:90%;
+	}
+
+	.services-info-img{
+		display: none;
+	}
+
 
 }
 
@@ -554,4 +594,35 @@ address{
     margin: 25px 2.5% 0 2.5%;
 
   }
+
+	.services-header{
+		width:90%;
+		margin: 0 5% 0 5%;
+	}
+
+	.content-row-s{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 25px 0;
+		width:100%;
+		border-top:2px solid black;
+		padding-top:30px;
+	}
+
+	.content-row-s2{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content-row-s2 div{
+		width:90%;
+	}
+
+	.services-info-img{
+		display: none;
+	}
 }

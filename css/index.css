@@ -1,3 +1,630 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+h1{
+	font-size: 60px;
+}
+
+.services-header h1, .contact-header h1{
+	font-size: 30px;
+
+}
+
+h2{
+	font-size:22px;
+}
+
+.content-row-s h2, .content-row-s2 h2{
+	font-size:18px;
+}
+
+.container{
+
+	width: 800px;
+	margin: 0 auto;
+	font-size: 15px;
+}
 
 
+.top-header {
+	display:flex;
+	justify-content: space-between;
+	margin: 15px;
+
+}
+
+.top-header nav{
+	display:flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+
+.top-header nav a{
+	text-decoration: none;
+	color:lightgrey;
+	margin: 10px 25px 0 25px;
+}
+
+button{
+	background-color: white;
+ 	color: black;
+  border: 1px solid black;
+	width: 140px;
+	height:28px;
+
+}
+
+.bottom-header-container {
+	display:flex;
+	justify-content: space-between;
+	margin: 40px 0 60px 0;
+
+}
+
+.bottom-header{
+	align-self: center;
+
+}
+
+.bottom-header h1{
+	margin: auto;
+	width:50px;
+}
+
+ .bottom-header h1:first-of-type{
+	margin: auto;
+	width:240px;
+}
+
+.bottom-header h1:last-of-type{
+	margin: auto;
+	width: 150px;
+}
+
+.bottom-header p{
+	margin:15px auto;
+	width:140px;
+}
+
+.content-row{
+	display:flex;
+	margin: 10px auto;
+	width:800px;
+	border-top:2px solid black;
+	padding-top:30px;
+}
+
+
+.content-row div:first-of-type{
+	display:flex;
+	flex-direction: column;
+	margin: 0 40px 0 0;
+	width:350px;
+}
+
+.content-row div:last-of-type{
+	display:flex;
+	flex-direction: column;
+	margin: 0 0 0 40px;
+	width:350px;
+}
+
+.middle-img{
+	margin: 30px auto;
+	width:800px;
+	height:200px;
+}
+
+.content-row2{
+	display:flex;
+	margin: 10px auto;
+	width:800px;
+	border-bottom:2px solid black;
+	padding-bottom:30px;
+
+}
+
+.content-row2 div{
+	display:flex;
+	flex-direction: column;
+	margin: 0 10px 0 10px;
+	width:250px;
+}
+
+.content-row2 div:first-of-type{
+	display:flex;
+	flex-direction: column;
+	margin: 0 10px 0 0;
+	width:250px;
+}
+
+.content-row2 div:last-of-type{
+	display:flex;
+	flex-direction: column;
+	margin: 0 0 0 10px;
+	width:250px;
+}
+
+.content-row-s{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0;
+	width:800px;
+	border-top:2px solid black;
+	padding-top:30px;
+}
+
+.content-row-s div{
+	width: 350px;
+	height: 225px;
+	background-color: #F0EFEF;
+	border: 2px solid black;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+.content-row-s div button{
+
+	margin: 20px 0 20px 0;
+	border-radius: 5px;
+
+}
+
+.content-row-s2{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px auto;
+	width:800px;
+	border-top:2px solid black;
+	padding-top:30px;
+}
+
+.content-row-s2 div{
+	display:flex;
+	flex-wrap: wrap;
+
+	margin: 10px 0;
+	width:325px;
+
+}
+
+ul{
+	list-style: square;
+
+}
+li{
+	margin:15px;
+}
+.services-header{
+	margin: 0 0 40px 0;
+}
+
+footer {
+	margin: 30px 0 20px 0;
+}
+
+address{
+
+}
+.contact-icon{
+	margin: 10px 20px 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.contact-icon2{
+	margin: 10px 20px 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.content-row-c{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0;
+	width:800px;
+	border-top:2px solid black;
+	padding-top:30px;
+}
+
+.content-row-c div{
+	width: 350px;
+	height: 225px;
+	background-color: white;
+	border: 2px solid black;
+	padding: 15px;
+	margin: 20px 0;
+
+}
+
+.content-row-c div button{
+
+	margin: 20px 0 20px 0;
+	border-radius: 5px;
+
+}
+
+.hidden1{
+	color: black;
+	opacity: 0;
+}
+
+.content-row-c img:hover .hidden1{
+	opacity: 1;
+}
+
+.copyright{
+	width:180px;
+	margin: 50px auto;
+
+}
+
+/*create new styles for smaller screens starting here*/
+@media(max-width:800px){ /*smaller computer screens and tablets go here*/
+	.container{
+		width:100%;
+
+	}
+
+	.top-header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 20px 0 20px 0;
+    width: 100%;
+
+  }
+	.top-header div{
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+
+	.top-header nav{
+    justify-content: space-between;
+    align-items: center;
+
+    width:100%;
+
+  }
+
+	.top-header nav a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 2%;
+    margin:10px 1% 0 1%;
+
+    width:100%;
+  }
+
+	.top-header-img{
+		display: none;
+	}
+
+	.logo{
+
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+	.bottom-header-container{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	.bottom-header{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	.content-row{
+		width: 90%;
+	}
+
+	.content-row2{
+		width: 90%;
+	}
+
+	#middle-img{                      /*this targets the div that surrounds the middle img so you can easily manipulate that area*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-img{
+    width:90%;
+    height:20%;
+  }
+
+	footer{
+
+		margin: 25px 5% 0 5%;
+
+  }
+
+	.services-header{
+		width:90%;
+		margin: 0 5% 0 5%;
+	}
+
+	.content-row-s{
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+		margin: 10px 2.5%;
+		width:90%;
+		border-top:2px solid black;
+		padding-top:30px;
+	}
+
+	@media(min-width:501px){		/*fix some wonkyness when going between different resolutions this makes it so it only applies to sizes larger than a mobile*/
+
+		.content-row-s div{
+			width: 85%;
+			margin: 2.5% 2.5%;
+		}
+
+		.content-row-s2{
+			width:90%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+
+
+	.content-row-s2 div{
+		width:90%;
+	}
+
+	.services-info-img{
+		display: none;
+	}
+
+
+}
+
+@media(max-width:500px){  /*mobile sized screens goes here*/
+	.container{
+		width:100%;
+	}
+  .top-header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 20px 0 20px 0;
+    width: 100%;
+
+  }
+
+  .top-header nav{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 0 20px 0;
+    width:100%;
+
+  }
+
+  .top-header nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin:0;
+    border-bottom: 2px solid lightgrey;
+    width:100%;
+  }
+
+  .top-header div{
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+
+  .bottom-header-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .bottom-header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .logo{
+    order: -10;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgrey;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .top-header-img{
+    display: none;
+  }
+
+  .content-row{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:95%;
+    margin: 0 2.5% 0 2.5%;
+
+  }
+
+  .content-row div:first-of-type{
+    display:flex;
+    margin:0 2.5% 0 2.5%;
+    width:90%;
+
+  }
+
+  .content-row div:last-of-type{
+    display:flex;
+    margin:20px 2.5% 0 2.5%;
+    width:90%;
+
+  }
+
+  #middle-img{                      /*this targets the div that surrounds the middle img so you can easily manipulate that area*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .middle-img{
+    width:90%;
+    height:20%;
+  }
+
+  .content-row2{
+    display:flex;
+    flex-direction: column;
+    margin: 0 2.5% 0 2.5%;
+    width: 95%;
+  }
+
+  .content-row2 div{
+    display:flex;
+    flex-direction: column;
+    margin:20px 2.5% 0 2.5%;
+  }
+
+  .content-row2 div:first-of-type{
+    display:flex;
+    flex-direction: column;
+    margin: 0 2.5% 0 2.5%;
+  }
+
+  .content-row2 div:last-of-type{
+    display:flex;
+    flex-direction: column;
+    margin:20px 2.5% 0 2.5%;
+  }
+
+  footer{
+    margin: 25px 2.5% 0 2.5%;
+
+  }
+
+	.services-header{
+		width:90%;
+		margin: 0 5% 0 5%;
+	}
+
+	.content-row-s{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 25px 0;
+		width:100%;
+		border-top:2px solid black;
+		padding-top:30px;
+	}
+
+	.content-row-s2{
+		width:100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content-row-s2 div{
+		width:90%;
+	}
+
+	.services-info-img{
+		display: none;
+	}
+}
